@@ -1,14 +1,12 @@
 import './style/style.css'
+import { Link } from 'react-router-dom';
+// Media Assets
 import baluran from './assets/img/baluran.jpg'
 import ijen from './assets/img/ijen.jpg'
 import teluk_hijau from './assets/img/teluk_hijau.jpg'
 import ijen2 from './assets/img/ijen2.jpg'
-import { Link } from 'react-router-dom';
-
-// Socmed Assets
-import ig from './assets/img/ig-icon.png'
-import fb from './assets/img/fb-icon.png'
-import twt from './assets/img/twitter-icon.png'
+import hutan from './assets/img/hutan.jpg'
+import rujak from './assets/img/rujak_soto.jpg'
 
 import { useState } from 'react'
 import Footer from '../Components/Footer'
@@ -99,11 +97,15 @@ const Index = () => {
                     <hr size={5} />
                     <div className="card">
                         <div className="card-header">
-                            Quote
+                            PPKM
                         </div>
                         <div className="card-body">
                             <blockquote className="blockquote mb-0">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <p>PPKM (Promosi Produk Kuliner & Merchandise)
+
+                                    yang diinisiasi oleh Dinas Kebudayaan dan Pariwisata Kabupaten Banyuwangi.
+                                    Cintai Produk UMKM Banyuwangi. Produk lokal buatan asli masyarakat Banyuwangi.
+                                    Beli dengan cara hubungi kontak yang tersedia pada katalog produk</p>
                             </blockquote>
                         </div>
                     </div>
@@ -125,30 +127,39 @@ const Index = () => {
                     </div>
                     <div className="row ">
                         <div className="col-4 destinasi-card">
-                            <div className="card-destination mb-3 position-relative">
-                                <a href>
-                                    <img src={ijen} className="img-fluid" alt="..." />
-                                    <h1 className="destinasi-caption">Ijen</h1>
-                                </a>
-                            </div>
+                            <a href="https://banyuwangitourism.com/">
+                                <div className="card-destination mb-3 position-relative">
+                                    <a href>
+                                        <img src={ijen} className="img-fluid" alt="..." />
+                                        <h1 className="destinasi-caption">Ijen</h1>
+                                    </a>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div className="col-4 destinasi-card">
+                            <a href="https://banyuwangitourism.com/">
+                                <div className="card-destination mb-3 position-relative">
+                                    <img src={baluran} className="img-fluid" alt="..." />
+                                    <h1 className="destinasi-caption">Baluran</h1>
+                                </div>
+                            </a>
                         </div>
                         <div className="col-4 destinasi-card">
-                            <div className="card-destination mb-3 position-relative">
-                                <img src={ijen} className="img-fluid" alt="..." />
-                                <h1 className="destinasi-caption">Pulau Merah</h1>
-                            </div>
+                            <a href="https://banyuwangitourism.com/">
+                                <div className="card-destination mb-3 position-relative">
+                                    <img src={hutan} className="img-fluid" alt="..." />
+                                    <h1 className="destinasi-caption">De Djawatan</h1>
+                                </div>
+                            </a>
                         </div>
                         <div className="col-4 destinasi-card">
-                            <div className="card-destination mb-3 position-relative">
-                                <img src={ijen} className="img-fluid" alt="..." />
-                                <h1 className="destinasi-caption">De Djawatan</h1>
-                            </div>
-                        </div>
-                        <div className="col-4 destinasi-card">
-                            <div className="card-destination mb-3 position-relative">
-                                <img src={ijen} className="img-fluid" alt="..." />
-                                <h1 className="destinasi-caption">Teluk Hijau</h1>
-                            </div>
+                            <a href="https://banyuwangitourism.com/">
+                                <div className="card-destination mb-3 position-relative">
+                                    <img src={teluk_hijau} className="img-fluid" alt="..." />
+                                    <h1 className="destinasi-caption">Teluk Hijau</h1>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -169,10 +180,9 @@ const Index = () => {
                                     </div>
                                     <div className="col-md-4">
                                         <div className="card-body">
-                                            <h5 className="card-title">Card title</h5>
-                                            <p className="card-text">This is a wider card with supporting text below as a natural
-                                                lead-in to additional content. This content is a little bit longer.</p>
-                                            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                                            <h5 className="card-title">Ardy Arnyth</h5>
+                                            <p className="card-text">Buruan yang mau wisata ke Banyuwangi, jangan tunggu nanti nanti, cepet Vaksin dan tetap patuhi protokol kesehatan</p>
+                                            <p className="card-text"><small className="text-muted">27-02-2021</small></p>
                                         </div>
                                     </div>
                                 </div>
@@ -197,7 +207,7 @@ const Index = () => {
                                         CARE, sebuah simbol dukungan berupa panduan protokol kesehatan pariwisata yang
                                         mengedepankan usaha terbaik dalam mewujudkan kebersihan, kesehatan, keselamatan, dan
                                         kelestarian lingkungan bersama di destinasi pariwisata Indonesia.</p>
-                                    <a href className="btn btn-sign-in">Baca Selengkapnya</a>
+                                    <Link Link to={'/panduan'} className="btn btn-sign-in">Baca Selengkapnya</Link>
                                 </div>
                             </div>
                         </div>

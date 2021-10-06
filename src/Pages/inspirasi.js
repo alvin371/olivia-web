@@ -6,6 +6,9 @@ import { useState } from 'react';
 // asset media
 import baluran from './assets/img/baluran.jpg'
 import ijen from './assets/img/ijen.jpg'
+import teluk_hijau from './assets/img/teluk_hijau.jpg'
+import ijen2 from './assets/img/ijen2.jpg'
+import hutan from './assets/img/hutan.jpg'
 const Inspirasi = () => {
     const [navbar, setNavbar] = useState(false)
 
@@ -60,7 +63,7 @@ const Inspirasi = () => {
                         </div>
                     </div>
                 </div>
-                <div className="container">
+                <div className="container my-5">
                     <nav style={{ bsBreadcrumbDivider: 'url("data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="8" height="8"%3E%3Cpath d="M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z" fill="currentColor"/%3E%3C/svg%3E")' }} aria-label="breadcrumb">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item"><a href="#">Home</a></li>
@@ -84,24 +87,24 @@ const Inspirasi = () => {
                             <div className="col-3 destinasi-card">
                                 <div className="card-destination mb-3 position-relative">
                                     <img src={ijen} className="img-fluid" alt="..." />
-                                    <h1 className="destinasi-caption">Teluk Hijau</h1>
+                                    <h1 className="destinasi-caption">Ijen</h1>
                                 </div>
                             </div>
                             <div className="col-3 destinasi-card">
                                 <div className="card-destination mb-3 position-relative">
-                                    <img src={ijen} className="img-fluid" alt="..." />
-                                    <h1 className="destinasi-caption">Teluk Hijau</h1>
+                                    <img src={baluran} className="img-fluid" alt="..." />
+                                    <h1 className="destinasi-caption">Baluran</h1>
                                 </div>
                             </div>
                             <div className="col-3 destinasi-card">
                                 <div className="card-destination mb-3 position-relative">
-                                    <img src={ijen} className="img-fluid" alt="..." />
-                                    <h1 className="destinasi-caption">Teluk Hijau</h1>
+                                    <img src={hutan} className="img-fluid" alt="..." />
+                                    <h1 className="destinasi-caption">De Djawatan</h1>
                                 </div>
                             </div>
                             <div className="col-3 destinasi-card">
                                 <div className="card-destination mb-3 position-relative">
-                                    <img src={ijen} className="img-fluid" alt="..." />
+                                    <img src={teluk_hijau} className="img-fluid" alt="..." />
                                     <h1 className="destinasi-caption">Teluk Hijau</h1>
                                 </div>
                             </div>
